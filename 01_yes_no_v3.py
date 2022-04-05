@@ -1,4 +1,7 @@
-"""Converting it into a while loop so we can efficiently test if the code is working"""
+""" Taking out the function and using a while loop.
+This is so I can efficiently test my code to make sure it is working,
+and it is easy to screenshot it all at once.
+"""
 
 question = ""
 while question != "x":
@@ -22,4 +25,3 @@ while question != "x":
     print()
 
 
-yes_no()

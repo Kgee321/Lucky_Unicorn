@@ -1,5 +1,6 @@
-"""Putting the code into a function so it can be repeated when needed.
-Also asking the question out of the function so multiple question can be asked and answered with this code.
+"""Putting the code into an efficient function so it is able to be used for any different
+questions that involves a yes/no answer.
+My storing the question  out of the function so different question can be asked and answered with this code another time.
 Written by Katelyn Gee
 28/03/2022"""
 

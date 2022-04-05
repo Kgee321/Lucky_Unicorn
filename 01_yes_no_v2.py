@@ -1,6 +1,8 @@
 """Editing 01_yes_no_v1. Adding .lower() to question,
 so it does not matter if they enter capital letters or lowercase letters
-checking if user input is lower case by printing it at the end"""
+checking if user input is lower case by printing it at the end
+I put it into a basic function so when they user enters an incorrect input, it repeats
+the functions until they input the correct input"""
 
 
 def yes_no():
