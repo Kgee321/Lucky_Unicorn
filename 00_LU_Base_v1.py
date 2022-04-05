@@ -33,13 +33,41 @@ def instructions():
     print("The game rules will go here")
     print()
     print("Program continues")
+    print()
 
 
-# main routine goes here:
+# Number checking functions
+def number_checker(question, low, high):
+    error = "Error, try again! Please enter a whole number between 1 and 10."
+    amount = 0
+
+    # Keeps asking until the correct value is entered
+    while True:
+        try:
+            # asking the question
+            amount = int(input(question))
+            print()
+
+            # checking if the number is between the required amount
+            if low <= amount <= high:
+                return amount
+            else:
+                print(error)
+
+        except ValueError:
+            # print error if not a valid integer
+            print(error)
+
+
+# Yes/No checker main routine
 played_before = yes_no("Do you know how to play this game (Lucky Unicorn)? Y/N ")
 
 if played_before == "No":
     instructions()
-else:
-    print("Program continues")
+
+
+# How much checker main routine
+print()
+user_balance = number_checker('Enter the amount of money you want to play with between 1 and 10: $', 1, 10)
+print(f"You are using ${user_balance}")
 

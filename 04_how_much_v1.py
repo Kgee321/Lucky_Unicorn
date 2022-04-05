@@ -5,12 +5,12 @@ Written by Katelyn Gee
 31/03/2022"""
 
 
-def number_checker(question):
+def number_checker():
     error = "Error, try again! Please enter a number between 1 and 10."
     valid = False
     while not valid:
         try:
-            amount = int(input(question))
+            amount = int(input('Enter a number between 1 and 10: '))
             if 1 <= amount <= 10:
                 valid = True
                 return amount
@@ -20,4 +20,4 @@ def number_checker(question):
             print(error)
 
 
-print(f"You number is {number_checker('Enter a number between 1 and 10: ')}")
+print(f"You number is {number_checker()}")
