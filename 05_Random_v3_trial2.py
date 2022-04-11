@@ -32,9 +32,12 @@ for i in range(10):
     else:
         # Making a list to print a random of zebra or horse
         random_token = ["Zebra", "Horse"]
+
         # token is randomly selected from horse or zebra
         final_choice = random.choice(random_token)
         money += 0.5
+
+    # prints the token and final money count of each token for testing
     print(f"Your token: {final_choice}, Your balance is now {money}")
     print()
 
