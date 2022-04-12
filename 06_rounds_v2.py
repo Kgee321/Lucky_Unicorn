@@ -1,10 +1,10 @@
-"""Component 4 -- Version 1
-Using 05_random_v3_trial2 and using a balance of $5 to test it.
-Adding the number of rounds and asking the user if they want to continue playing or quit.
-Changing the range of random numbers able to be chosen so only donkey can be chosen
--- This is so I can efficiently test my code.
+"""Component 4 -- Version 2
+Changing the code so that all tokens can be randomly selected by the computer
+Provides feedback on the number of rounds and the balances
+Editing small factors
+Test set to $5 still
 By Katelyn Gee
-11-12/04/2022"""
+12/04/2022"""
 
 # makes the random function accessible
 import random
@@ -29,7 +29,7 @@ while play_again != "x":
     # Take off $1 to play the game
     money -= 1
     # Computer choice a random
-    computer_choice = random.randint(6, 36)
+    computer_choice = random.randint(1, 100)
     if computer_choice <= 5:
 
         # There is a 5% chance the random number will be under 5. If that happens, unicorn is token
@@ -51,7 +51,7 @@ while play_again != "x":
     # prints the token and final money count of each token for testing
     print(f"Your token: {final_choice}, Your balance is now {money}")
     print()
-    if rounds > 4:
+    if money == 0:
         play_again = "x"
         print("Sorry, you ran out of money")
     else:
