@@ -1,9 +1,6 @@
-""" Based on base version 2.
-Editing the code to make it look pretty and aesthetic
-Adding in the instructions on how to play
-THE FINAL CODE!!!!
- Katelyn Gee
- 12/04/2022"""
+""" My Final code!
+Written by Katelyn Gee
+14/04/2022"""
 
 # importing random generator
 import random
